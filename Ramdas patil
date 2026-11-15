@@ -1,0 +1,269 @@
+```html
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री. रामदास पाटील सुमठाणकर | समृद्धीचा प्रवाह, लोकसेवेचा ध्यास!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Mukta', sans-serif;
+            background-color: #faf8f5;
+            color: #0f172a;
+        }
+        h1, h2, h3, .royal-font {
+            font-family: 'Tiro Devanagari Marathi', serif;
+        }
+        .tricolor-bar {
+            background: linear-gradient(90deg, #FF9933 0%, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%, #138808 100%);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 82% 28%, rgba(251, 191, 36, 0.16) 0%, transparent 48%),
+                        radial-gradient(circle at 12% 80%, rgba(16, 185, 129, 0.14) 0%, transparent 48%),
+                        linear-gradient(135deg, #101935 0%, #1e1b4b 50%, #0f292e 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #d97706 100%);
+        }
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #fde68a 0%, #fbbf24 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+        }
+        .royal-shadow {
+            box-shadow: 0 20px 45px -15px rgba(11, 29, 58, 0.18);
+        }
+        @keyframes slowFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-float {
+            animation: slowFloat 5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-400 selection:text-slate-900">
+
+    <!-- Top Tricolor Strip -->
+    <div class="h-1.5 w-full tricolor-bar sticky top-0 z-50"></div>
+
+    <!-- Top Social & Contact Bar -->
+    <div class="bg-slate-950 text-slate-300 text-xs py-2 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-amber-400 font-medium">
+                    <i class="fa-solid fa-location-dot"></i> नांदेड लोकसभा व देगलूर विधानसभा मतदारसंघ
+                </span>
+                <a href="https://wa.me/919763620066" target="_blank" class="hidden sm:flex items-center gap-1.5 hover:text-emerald-400 transition">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> +91 97636 20066
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="text-slate-400 hidden md:inline">अधिकृत सोशल मीडिया:</span>
+                <a href="https://www.facebook.com/ramdaspatilsumthankar" target="_blank" aria-label="Facebook" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-blue-600 text-white flex items-center justify-center transition">
+                    <i class="fa-brands fa-facebook-f text-[11px]"></i>
+                </a>
+                <a href="https://www.instagram.com/ramdaspatilsumthankar" target="_blank" aria-label="Instagram" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-pink-600 text-white flex items-center justify-center transition">
+                    <i class="fa-brands fa-instagram text-[11px]"></i>
+                </a>
+                <a href="https://www.youtube.com/@ramdaspatilsumthankar" target="_blank" aria-label="YouTube" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-red-600 text-white flex items-center justify-center transition">
+                    <i class="fa-brands fa-youtube text-[11px]"></i>
+                </a>
+                <a href="https://wa.me/919763620066" target="_blank" aria-label="WhatsApp" class="w-6 h-6 rounded-full bg-slate-800 hover:bg-emerald-600 text-white flex items-center justify-center transition">
+                    <i class="fa-brands fa-whatsapp text-[11px]"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-1.5 z-40 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 py-2.5 flex items-center justify-between gap-3">
+            <!-- Logo & Full Name -->
+            <a href="#home" class="flex items-center gap-3 min-w-0 group">
+                <div class="relative w-12 h-12 sm:w-14 sm:h-14 aspect-square rounded-full overflow-hidden border-2 border-amber-500 shadow-md bg-white flex-shrink-0 cursor-pointer" title="लोगो बदलण्यासाठी क्लिक करा" onclick="event.preventDefault(); document.getElementById('logoInput').click();">
+                    <img id="headerLogoImg" src="1003088467.jpg" alt="रामदास पाटील सुमठाणकर फाउंडेशन" class="w-full h-full object-contain" onerror="this.style.display='none'; document.getElementById('headerLogoFallback').style.display='flex';">
+                    <div id="headerLogoFallback" style="display:none;" class="w-full h-full bg-gradient-to-br from-amber-500 to-amber-700 text-white flex flex-col items-center justify-center text-center p-1">
+                        <span class="text-[9px] font-bold leading-tight">RPS<br>फाउंडेशन</span>
+                    </div>
+                </div>
+                <div class="min-w-0">
+                    <p class="text-[11px] sm:text-xs font-bold text-amber-700 tracking-wide truncate">
+                        समृद्धीचा प्रवाह, लोकसेवेचा ध्यास!
+                    </p>
+                    <h1 class="text-base sm:text-xl md:text-2xl font-bold text-slate-900 leading-tight truncate">
+                        श्री. रामदास पाटील सुमठाणकर
+                    </h1>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+                <a href="#home" class="hover:text-amber-600 transition relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 hover:after:w-full after:transition-all">मुख्यपृष्ठ</a>
+                <a href="#about" class="hover:text-amber-600 transition relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 hover:after:w-full after:transition-all">जीवनप्रवास</a>
+                <a href="#vision" class="hover:text-amber-600 transition relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 hover:after:w-full after:transition-all">विकास व्हिजन</a>
+                <a href="#news" class="hover:text-amber-600 transition relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-amber-600 hover:after:w-full after:transition-all">ताज्या बातम्या</a>
+                <a href="#connect" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-slate-900 to-slate-800 text-white hover:from-amber-600 hover:to-amber-500 transition shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-headset text-amber-400"></i> जनसंपर्क कक्ष
+                </a>
+            </nav>
+
+            <!-- Mobile Action Button -->
+            <div class="flex lg:hidden items-center gap-2 flex-shrink-0">
+                <a href="#connect" class="px-3.5 py-1.5 rounded-full bg-slate-900 text-white text-xs font-semibold hover:bg-amber-600 transition">
+                    जनसंपर्क
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hidden File Inputs for Quick Demo Upload -->
+    <input type="file" id="logoInput" accept="image/*" class="hidden" onchange="handleImageUpload(this, 'logo')">
+    <input type="file" id="photoInput" accept="image/*" class="hidden" onchange="handleImageUpload(this, 'photo')">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-28">
+        <!-- Subtle Geometric Decorative Rings -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full border border-amber-400/10 pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-20 w-80 h-80 rounded-full border border-emerald-400/10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            
+            <!-- Left Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-card text-amber-300 text-xs sm:text-sm font-semibold shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    भारतीय राष्ट्रीय काँग्रेस | समाजसेवा आणि जनसंपर्क
+                </div>
+
+                <p class="text-amber-400 font-bold text-base sm:text-xl tracking-wide flex items-center justify-center lg:justify-start gap-2">
+                    <span class="hidden sm:inline-block w-8 h-0.5 bg-amber-400/60"></span>
+                    “समृद्धीचा प्रवाह, लोकसेवेचा ध्यास!”
+                </p>
+
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white drop-shadow-sm">
+                    श्री. रामदास पाटील <span class="gold-text-gradient">सुमठाणकर</span>
+                </h2>
+
+                <p class="text-slate-200 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    <strong class="text-white font-semibold">रामदास पाटील सुमठाणकर फाउंडेशन</strong>च्या माध्यमातून शिक्षण, आरोग्य, शेतकरी कल्याण आणि युवक सक्षमीकरणासाठी अहोरात्र कार्यरत. <strong class="text-amber-300 font-semibold">नांदेड लोकसभा आणि देगलूर विधानसभा</strong> मतदारसंघाच्या सर्वांगीण विकासासाठी सदैव कटिबद्ध नेतृत्व!
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                    <a href="#connect" class="px-7 py-3.5 rounded-xl gold-gradient text-slate-950 font-bold text-base shadow-xl shadow-amber-500/20 hover:brightness-105 hover:-translate-y-0.5 transition flex items-center gap-2.5">
+                        <i class="fa-solid fa-handshake"></i> जनसंपर्क / समस्या नोंदवा
+                    </a>
+                    <a href="https://wa.me/919763620066?text=नमस्कार%20रामदास%20पाटील%20सुमठाणकर%20साहेब,%20मला%20आपल्याशी%20संपर्क%20साधायचा%20आहे." target="_blank" class="px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-base shadow-xl shadow-emerald-900/30 hover:-translate-y-0.5 transition flex items-center gap-2.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> थेट WhatsApp संपर्क
+                    </a>
+                </div>
+
+                <!-- Key Highlights -->
+                <div class="pt-6 grid grid-cols-3 gap-3 sm:gap-5 max-w-xl mx-auto lg:mx-0">
+                    <div class="glass-card rounded-2xl p-3.5 sm:p-4 text-center lg:text-left">
+                        <p class="text-2xl sm:text-3xl font-extrabold text-amber-400">२४×७</p>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-0.5">जनतेच्या सेवेत तत्पर</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-3.5 sm:p-4 text-center lg:text-left">
+                        <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">१००+</p>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-0.5">सामाजिक व आरोग्य उपक्रम</p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-3.5 sm:p-4 text-center lg:text-left">
+                        <p class="text-xl sm:text-2xl font-extrabold text-orange-400 leading-tight">नांदेड-देगलूर</p>
+                        <p class="text-xs sm:text-sm text-slate-300 mt-0.5">सर्वांगीण विकास संकल्प</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Portrait Frame (1:1 Square Cutout Ready) -->
+            <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="relative w-72 h-72 sm:w-96 sm:h-96 aspect-square rounded-3xl bg-gradient-to-b from-amber-400/20 via-white/10 to-slate-900/90 border-2 border-amber-400/50 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] overflow-hidden flex items-end justify-center p-2 animate-float">
+                    <!-- Decorative Glow & Corner Accents -->
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(251,191,36,0.32),transparent_65%)]"></div>
+                    <div class="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-amber-300/70 rounded-tl-lg"></div>
+                    <div class="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-amber-300/70 rounded-tr-lg"></div>
+                    
+                    <img id="heroPhotoImg" src="1003088468.jpg" alt="श्री. रामदास पाटील सुमठाणकर" class="relative z-10 w-full h-full object-contain rounded-2xl drop-shadow-2xl" onerror="this.style.display='none'; document.getElementById('heroPhotoFallback').style.display='flex';">
+                    
+                    <!-- Fallback Vector Illustration if file is missing in preview -->
+                    <div id="heroPhotoFallback" style="display:none;" class="relative z-10 w-full h-full flex flex-col items-center justify-center text-center p-6">
+                        <div class="w-28 h-28 rounded-full bg-amber-400/20 border-2 border-amber-400 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-user-tie text-5xl text-amber-300"></i>
+                        </div>
+                        <p class="text-lg font-bold text-white">श्री. रामदास पाटील सुमठाणकर</p>
+                        <p class="text-xs text-amber-300 mt-1">डेमोमध्ये फोटो दाखवण्यासाठी खालील बटणावर क्लिक करा</p>
+                    </div>
+
+                    <!-- Demo Quick Photo Switcher Button -->
+                    <button type="button" onclick="document.getElementById('photoInput').click()" class="absolute bottom-3 right-3 z-20 px-3.5 py-1.5 rounded-xl bg-slate-950/85 hover:bg-amber-500 hover:text-slate-950 text-white text-xs font-semibold backdrop-blur-md border border-white/20 transition flex items-center gap-1.5 shadow-lg">
+                        <i class="fa-solid fa-camera"></i> फोटो निवडा
+                    </button>
+                </div>
+                <div class="mt-4 text-center">
+                    <span class="inline-flex items-center gap-2 px-5 py-1.5 rounded-full glass-card text-amber-300 text-xs sm:text-sm font-semibold shadow-md">
+                        <i class="fa-solid fa-award text-amber-400"></i> रामदास पाटील सुमठाणकर फाउंडेशन
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Foundation Section -->
+    <section id="about" class="py-16 md:py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Foundation Logo Display (1:1 Square) -->
+            <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="w-64 h-64 sm:w-80 sm:h-80 aspect-square rounded-3xl bg-gradient-to-br from-slate-50 to-amber-50/40 border-2 border-amber-200/70 royal-shadow p-5 flex items-center justify-center relative group">
+                    <img id="aboutLogoImg" src="1003088467.jpg" alt="रामदास पाटील सुमठाणकर फाउंडेशन लोगो" class="w-full h-full object-contain transition duration-500 group-hover:scale-105" onerror="this.style.display='none'; document.getElementById('aboutLogoFallback').style.display='flex';">
+                    
+                    <div id="aboutLogoFallback" style="display:none;" class="w-full h-full rounded-2xl bg-gradient-to-br from-[#8fa354] to-[#6d7f3b] text-white flex flex-col items-center justify-center p-6 text-center">
+                        <p class="text-xs font-semibold tracking-wider uppercase text-amber-200 mb-2">समृद्धीचा प्रवाह, लोकसेवेचा ध्यास!</p>
+                        <h4 class="text-2xl font-bold leading-snug">रामदास पाटील सुमठाणकर फाउंडेशन</h4>
+                    </div>
+
+                    <button type="button" onclick="document.getElementById('logoInput').click()" class="absolute bottom-3 right-3 px-3.5 py-1.5 rounded-xl bg-slate-900/90 hover:bg-amber-600 text-white text-xs font-semibold transition flex items-center gap-1.5 shadow-md">
+                        <i class="fa-solid fa-image"></i> लोगो निवडा
+                    </button>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="lg:col-span-7 space-y-5">
+                <div class="inline-flex items-center gap-2 text-amber-700 font-bold text-xs sm:text-sm uppercase tracking-wider bg-amber-50 px-3.5 py-1 rounded-full border border-amber-200/60">
+                    <i class="fa-solid fa-landmark"></i> परिचय आणि सामाजिक बांधिलकी
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+                    तळागाळातील सामान्य जनतेचा बुलंद आवाज
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    सामान्य शेतकरी, कष्टकरी आणि युवकांच्या प्रश्नांची सखोल जाण असणारे नेतृत्व म्हणजे <strong class="text-slate-900">श्री. रामदास पाटील सुमठाणकर</strong>. <strong class="text-amber-700">“समृद्धीचा प्रवाह, लोकसेवेचा ध्यास!”</strong> हे ब्रीद उराशी बाळगून त्यांनी <strong class="text-slate-900">रामदास पाटील सुमठाणकर फाउंडेशन</strong>च्या माध्यमातून नांदेड जिल्ह्यात लोकसेवेचे मोठे जाळे उभारले आहे.
+                </p>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    भारतीय राष्ट्रीय काँग्रेसच्या सर्वसमावेशक विचारधारेवर चालत <strong class="text-slate-900">नांदेड लोकसभा आणि देगलूर विधानसभा</strong> मतदारसंघातील सिंचन, रस्ते, आरोग्य, शिक्षण आणि युवकांच्या रोजगाराचे प्रश्न मार्गी लावण्यासाठी ते सदैव अग्रभागी आहेत.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                    <div class="p-5 rounded-2xl bg-gradient-to-br from-orange-50 to-amber-50/50 border border-orange-200/70 flex items-start gap-3.5 shadow-sm hover:shadow-md transition">
+                        <div class="w-11 h-11 rounded-xl bg-orange-500 text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">लोकसेवा प्रथम</h3>
+                            <p class="text-sm text-slate-600 mt-0.5">प्रत्येक गरजू नागरिकाच्या सुख-दुःखात थेट सहभाग व तात्काळ मदत.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-gradient-to-br from-emerald-50 to-teal-50/50 border border-emerald-200/70 flex items-start gap-3.5 shadow-sm hover:shadow-md transition">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-600 text-white flex items-center justify-center f
